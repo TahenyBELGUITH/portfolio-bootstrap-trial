@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  background-color: #1c1a19;
+  height: 500px;
+  width: 100%;
+}
+
+.social {
+  margin: 140px 0 300px 36px;
+}
+
+.social li {
+  list-style: none;
+  color: #cfcfcf;
+  margin: 20px;
+}
+
+.presentation hgroup {
+  margin: 100px 0 300px 36px;
+}
+
+.presentation h1 {
+  color: #f55800;
+  font-family: "Crete Round", sans-serif;
+  font-size: 72px;
+}
+
+.presentation h2 {
+  font-size: 22px;
+  font-family: "Crete Round", sans-serif;
+  color: white;
+}
+
+.presentation p {
+  color: white;
+}
+
+.image img {
+  margin: 30px 10px 0 0;
+  transform: rotate(30deg);
+  width: 400px;
+  height: 400px;
+}
