@@ -2,51 +2,293 @@
 
 * {
   padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Crete Round", sans-serif;
+}
+
+.navig {
+  background-color: #3e3c3c;
+  max-width: 100%;
+  color: white;
+}
+
+.navig li {
+  display: flex;
+  position: relative;
+  left: 600px;
+}
+
+.logo {
+  padding-left: 10px;
 }
 
 .intro {
-  display: flex;
-  flex-direction: row;
-  background-color: #1c1a19;
-  height: 500px;
-  width: 100%;
+  background-color: black;
+  height: 600px;
 }
 
 .social {
-  margin: 140px 0 300px 36px;
+  margin: 160px 0 10px 60px;
 }
 
-.social li {
+.intro li {
   list-style: none;
   color: #cfcfcf;
-  margin: 20px;
+  padding: 20px;
 }
 
-.presentation hgroup {
-  margin: 100px 0 300px 36px;
+.header-one {
+  margin-top: 210px;
 }
 
-.presentation h1 {
+h1 {
   color: #f55800;
-  font-family: "Crete Round", sans-serif;
   font-size: 72px;
-}
-
-.presentation h2 {
-  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
   font-family: "Crete Round", sans-serif;
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+  width: 90%;
+  font-family: "Crete Round", sans-serif;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  font-family: "Crete Round", sans-serif;
+  width: 100%;
+}
+
+.imagess {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.about-me {
+  background-color: #262626;
+  height: 900px;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.about-me h2 {
+  color: #f55800;
+  font-size: 42px;
+  margin: 80px 0 0 20px;
+  font-family: "Crete Round", sans-serif;
+}
+
+.about-me p {
+  color: white;
+  font-size: 20px;
+  margin: 20px 0 0 20px;
+  font-family: "Crete Round", sans-serif;
+  width: 90%;
+}
+
+.about-me img {
+  width: 100%;
+  margin-top: 58px;
+  margin-left: 11px;
+}
+
+.botton {
+  background-color: #f55800;
+  border-color: #f55800;
+  height: 48px;
+  width: 161px;
+  border-radius: 7px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 11px;
+  font-family: "Crete Round", sans-serif;
+}
+
+.devider {
+  width: 60%;
+  border: 1px solid white;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.footer-col a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+  margin: 10px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #f55800;
+  height: 2px;
+  box-sizing: border-box;
+  width: 20px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.sign-up a {
+  color: white;
+  text-decoration: none;
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+}
+
+.footer-col .social-media a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.footer-col {
+  margin-right: 32px;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.call-to-action {
+  bottom: 400px;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  margin-top: 60px;
+  position: relative;
+  left: 400px;
+}
+
+.call-to-action h1 {
+  position: relative;
+  left: 90px;
+  bottom: 50px;
+}
+
+.call-to-action form {
+  padding: 0 40px;
+  box-sizing: border-box;
+  border-radius: 5%;
+  position: relative;
+  left: 30%;
+  width: 100%;
+  top: 10px;
+}
+
+form .txt-field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.txt-field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt-field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.txt-field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: 0.5s;
+}
+
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label {
+  top: -5px;
   color: white;
 }
 
-.presentation p {
-  color: white;
+.txt-field input:focus ~ span,
+.txt-field input:valid ~ span {
+  width: 100%;
 }
 
-.image img {
-  margin: 30px 10px 0 0;
-  transform: rotate(30deg);
-  width: 400px;
-  height: 400px;
+.pass {
+  margin: 0;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+
+.pass:hover {
+  text-decoration: underline;
+}
+
+.content {
+  margin-top: 9rem;
+  margin-right: 60px;
+}
+
+.content h2,
+.content p {
+  color: black;
+}
+
+.col h3 {
+  margin-top: 9rem;
+  font-size: 30px;
+  font-weight: 700;
+  width: 90%;
+  padding: 30px;
+}
+
+#footer p {
+  color: #2196f3;
+  margin: 110px 0 20px 291px;
 }
