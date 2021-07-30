@@ -375,3 +375,7 @@ form .txt-field {
   font-family: "Crete Round", sans-serif;
   font-weight: 800;
 }
+
+.w3-input {
+  width: 50px;
+}
